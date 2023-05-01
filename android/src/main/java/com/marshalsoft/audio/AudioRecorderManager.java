@@ -1,4 +1,4 @@
-package com.rnim.rn.audio;
+package com.marshasoft.audio;
 
 import android.Manifest;
 import android.content.Context;

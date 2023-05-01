@@ -5,7 +5,7 @@ import android.util.Log;
 
 import com.facebook.react.ReactApplication;
 import com.zmxv.RNSound.RNSoundPackage;
-import com.rnim.rn.audio.ReactNativeAudioPackage;
+import com.marshalsoft.audio.ReactNativeAudioPackage;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;

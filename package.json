@@ -1,9 +1,9 @@
 {
-  "name": "react-native-audio",
-  "version": "4.3.1",
+  "name": "react-native-marshalsoft-audio",
+  "version": "1.0.0",
   "description": "React Native extension for recording audio",
   "main": "index.js",
-  "author": "Joshua Sierles <joshua@diluvia.net> (https://github.com/jsierles)",
+  "author": "Marshall Ekene <admin@marshalsoft.pro> (https://github.com/marshalsoft)",
   "files": [
     "ios/AudioRecorderManager.m",
     "ios/AudioRecorderManager.h",
@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:jsierles/react-native-audio.git"
+    "url": "git@github.com:marshalsoft/react-native-marshalsoft-audio.git"
   },
   "nativePackage": true
 }

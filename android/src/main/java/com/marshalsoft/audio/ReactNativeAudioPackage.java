@@ -1,4 +1,4 @@
-package com.rnim.rn.audio;
+package com.marshasoft.audio;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

@@ -13,7 +13,7 @@ For React Native <= 0.39, use v3.0.0 or lower.
 
 v4.0 introduced a breaking change to the API to introduce distinct pause and resume methods.
 
-v3.x removed playback support in favor of using more mature libraries like [react-native-sound](https://github.com/zmxv/react-native-sound). If you need to play
+v3.x removed playback support in favor of using more mature libraries like [react-native-marshalsoft-sound](https://github.com/marshalsoft/react-native-marshalsoft-sound). If you need to play
 from the network, please submit a PR to that project or try `react-native-video`.
 
 ### Installation
@@ -21,8 +21,8 @@ from the network, please submit a PR to that project or try `react-native-video`
 Install the npm package and link it to your project:
 
 ```
-npm install react-native-audio --save
-react-native link react-native-audio
+npm install react-native-marshalsoft-audio --save
+react-native link react-native-marshalsoft-audio
 ```
 
 On *iOS* you need to add a usage description to `Info.plist`:
@@ -46,15 +46,15 @@ This is not necessary if you have used `react-native link`
 
 Edit `android/settings.gradle` to declare the project directory:
 ```
-include ':react-native-audio'
-project(':react-native-audio').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-audio/android')
+include ':react-native-marshalsoft-audio'
+project(':react-native-marshalsoft-audio').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-marshalsoft-audio/android')
 ```
 
 Edit `android/app/build.gradle` to declare the project dependency:
 ```
 dependencies {
   ...
-  compile project(':react-native-audio')
+  implementation project(':react-native-marshalsoft-audio')
 }
 ```
 
@@ -62,7 +62,7 @@ Edit `android/app/src/main/java/.../MainApplication.java` to register the native
 
 ```java
 ...
-import com.rnim.rn.audio.ReactNativeAudioPackage; // <-- New
+import com.marshalsoft.audio.ReactNativeAudioPackage; // <-- New
 ...
 
 public class MainApplication extends Application implements ReactApplication {
@@ -78,7 +78,7 @@ public class MainApplication extends Application implements ReactApplication {
 
 #### iOS
 
-Drag `node_modules/react-native-audio/ios/RNAudio.xcoderproj` into your project's Libraries on Xcode.
+Drag `node_modules/react-native-marshalsoft-audio/ios/RNAudio.xcoderproj` into your project's Libraries on Xcode.
 
 Add `libRNAudio.a` into Link Binary With Libraries from Xcode - Build Phases.
 
@@ -153,10 +153,7 @@ OutputFormat: string, `mpeg_4, aac_adts, amr_nb, amr_wb, three_gpp, webm`
 
 AudioSource: int (constants) (Possible values: AudioSource.DEFAULT, AudioSource.MIC, AudioSource.VOICE_UPLINK, AudioSource.VOICE_DOWNLINK, AudioSource.VOICE_CALL, AudioSource.CAMCORDER, AudioSource.VOICE_RECOGNITION, AudioSource.VOICE_COMMUNICATION, AudioSource.REMOTE_SUBMIX, AudioSource.UNPROCESSED)
 
-See [the example](https://github.com/jsierles/react-native-audio/blob/master/AudioExample/index.ios.js) for more details. For playing audio check out [React Native Sound](https://github.com/zmxv/react-native-sound)
+See [the example](https://github.com/jsierles/react-native-marshalsoft-audio/blob/master/AudioExample/index.ios.js) for more details. For playing audio check out [React Native Sound](https://github.com/marshalsoft/react-native-marshalsoft-sound)
 
 MP3 recording is *not supported* since the underlying platforms do not support it.
 
-Thanks to Brent Vatne, Johannes Lumpe, Kureev Alexey, Matthew Hartman and Rakan Nimer for their assistance.
-
-Progress tracking code borrowed from https://github.com/brentvatne/react-native-video.

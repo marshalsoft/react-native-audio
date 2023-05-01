@@ -1,4 +1,4 @@
-package com.rnim.rn.audio;
+package com.marshasoft.audio;
 
 import java.lang.System;
 import java.lang.Thread;
